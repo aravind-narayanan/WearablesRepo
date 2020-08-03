@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD81AE9E24D8981C00CDD3F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD81AE9D24D8981C00CDD3F3 /* Main.storyboard */; };
+		AD81AEA224D898B300CDD3F3 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD81AEA124D898B300CDD3F3 /* HealthKit.framework */; };
+		AD81AEA424D89B7900CDD3F3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD81AEA324D89B7900CDD3F3 /* ViewController.swift */; };
+		AD81AEA624D89D8200CDD3F3 /* TitledUISwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD81AEA524D89D8200CDD3F3 /* TitledUISwitch.swift */; };
 		C698C20B24D0BB7700BD8EC8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C698C20A24D0BB7700BD8EC8 /* AppDelegate.swift */; };
 		C698C20D24D0BB7700BD8EC8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C698C20C24D0BB7700BD8EC8 /* SceneDelegate.swift */; };
 		C698C20F24D0BB7700BD8EC8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C698C20E24D0BB7700BD8EC8 /* ContentView.swift */; };
@@ -17,6 +21,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AD81AE9D24D8981C00CDD3F3 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		AD81AE9F24D898B300CDD3F3 /* GitXCode.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GitXCode.entitlements; sourceTree = "<group>"; };
+		AD81AEA124D898B300CDD3F3 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		AD81AEA324D89B7900CDD3F3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AD81AEA524D89D8200CDD3F3 /* TitledUISwitch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitledUISwitch.swift; sourceTree = "<group>"; };
 		C698C20724D0BB7700BD8EC8 /* GitXCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitXCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C698C20A24D0BB7700BD8EC8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C698C20C24D0BB7700BD8EC8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -33,18 +42,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD81AEA224D898B300CDD3F3 /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AD81AEA024D898B300CDD3F3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AD81AEA124D898B300CDD3F3 /* HealthKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C698C1FE24D0BB7700BD8EC8 = {
 			isa = PBXGroup;
 			children = (
 				C698C21E24D0ED2C00BD8EC8 /* test.swift */,
 				C698C20924D0BB7700BD8EC8 /* GitXCode */,
 				C698C20824D0BB7700BD8EC8 /* Products */,
+				AD81AEA024D898B300CDD3F3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,11 +78,15 @@
 		C698C20924D0BB7700BD8EC8 /* GitXCode */ = {
 			isa = PBXGroup;
 			children = (
+				AD81AE9F24D898B300CDD3F3 /* GitXCode.entitlements */,
 				C698C20A24D0BB7700BD8EC8 /* AppDelegate.swift */,
 				C698C20C24D0BB7700BD8EC8 /* SceneDelegate.swift */,
 				C698C20E24D0BB7700BD8EC8 /* ContentView.swift */,
 				C698C21024D0BB7800BD8EC8 /* Assets.xcassets */,
 				C698C21524D0BB7800BD8EC8 /* LaunchScreen.storyboard */,
+				AD81AE9D24D8981C00CDD3F3 /* Main.storyboard */,
+				AD81AEA324D89B7900CDD3F3 /* ViewController.swift */,
+				AD81AEA524D89D8200CDD3F3 /* TitledUISwitch.swift */,
 				C698C21824D0BB7800BD8EC8 /* Info.plist */,
 				C698C21224D0BB7800BD8EC8 /* Preview Content */,
 			);
@@ -139,6 +162,7 @@
 				C698C21724D0BB7800BD8EC8 /* LaunchScreen.storyboard in Resources */,
 				C698C21424D0BB7800BD8EC8 /* Preview Assets.xcassets in Resources */,
 				C698C21124D0BB7800BD8EC8 /* Assets.xcassets in Resources */,
+				AD81AE9E24D8981C00CDD3F3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,10 +173,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD81AEA424D89B7900CDD3F3 /* ViewController.swift in Sources */,
 				C698C20B24D0BB7700BD8EC8 /* AppDelegate.swift in Sources */,
 				C698C21F24D0ED2C00BD8EC8 /* test.swift in Sources */,
 				C698C20D24D0BB7700BD8EC8 /* SceneDelegate.swift in Sources */,
 				C698C20F24D0BB7700BD8EC8 /* ContentView.swift in Sources */,
+				AD81AEA624D89D8200CDD3F3 /* TitledUISwitch.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,16 +314,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = GitXCode/GitXCode.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"GitXCode/Preview Content\"";
-				DEVELOPMENT_TEAM = V3WZ33533P;
+				DEVELOPMENT_TEAM = Y7KWBB77H5;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = GitXCode/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.peoplepowerco.GitXCode;
+				PRODUCT_BUNDLE_IDENTIFIER = com.peoplepowerco.Wearables;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -308,16 +335,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = GitXCode/GitXCode.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"GitXCode/Preview Content\"";
-				DEVELOPMENT_TEAM = V3WZ33533P;
+				DEVELOPMENT_TEAM = Y7KWBB77H5;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = GitXCode/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.peoplepowerco.GitXCode;
+				PRODUCT_BUNDLE_IDENTIFIER = com.peoplepowerco.Wearables;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
